@@ -177,35 +177,17 @@ export const authStyles = () => {
             gap: 5
         },
 
+        // SIGN UP
 
-        // // SIGN UP
-
-        // nameInputs: {
-        //     flexDirection: "row",
-        //     justifyContent: "space-between",
-        //     gap: 50,
-        // },
-        // nameInput:{
-        //     width: 150,
-        //     borderColor: "#9ca3af",
-        //     borderWidth: 1,
-        //     padding: 9,
-        //     color: "#000",
-        //     borderRadius: 8,
-        //     marginTop: 15
-        // },
-        // inputSignUpContainer:{
-        //     justifyContent: 'center',
-        //     alignItems: 'center',
-        //     marginBottom: 10,
-        //     marginTop: 10,
-        // },
-        // buttonSignUpContainer: {
-        //     justifyContent: 'center',
-        //     alignItems: 'center',
-        //     width: "100%",
-        //     height: "25%",
-        //     marginTop: -40
-        // },
+        fullNameInputs: {
+            flexDirection: "row",
+            justifyContent: "space-between",
+            width: "100%",
+            gap: 25
+        },
+        signUpInputContainer:{
+            flex: 1
+        }
+        
     })
 }

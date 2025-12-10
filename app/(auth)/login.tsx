@@ -39,6 +39,7 @@ const Login = () => {
                 value={password}
                 onChangeText={setPassword}
                 keyboardType='email-address'
+                placeholder="********"
                 secureTextEntry={!showPassword}
                 autoCapitalize='none'
                 placeholderTextColor={'#696969'}
