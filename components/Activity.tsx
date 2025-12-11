@@ -9,7 +9,7 @@ const Activity = () => {
   return (
     <SafeAreaView style={styles.activityContainer}>
       {/* PROGRESS TRACKING */}
-      <Text style={styles.activityHeader}>Your Activity</Text>
+      <Text style={styles.header}>Your Activity</Text>
       <View style={styles.activityCard}>
         <View style={styles.topRow}>
           <Image
@@ -23,7 +23,8 @@ const Activity = () => {
             </Text>
           </View>
         </View>
-        
+              
+        {/* TASK TRACKING */}
         <View style={styles.activitySecondContainer}>
           <View style={styles.secondCard}>
             <Text style={styles.activityPercentage}>85%</Text>
@@ -41,10 +42,10 @@ const Activity = () => {
                     <Text style={{ fontSize: 10 }}>Task Remaining</Text>
                 </View>
             </View>
-
           </View>
         </View>
       </View>
+      
     </SafeAreaView>
   );
 };

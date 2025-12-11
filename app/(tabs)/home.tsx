@@ -1,8 +1,10 @@
-import { View, Text, Image, ScrollView } from "react-native";
+import { View, Text, Image, ScrollView, TouchableOpacity } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { tabsStyles } from "@/styles/tabs.style.home";
 import Activity from "@/components/Activity";
+import UpcomingEvents from "@/components/UpcomingEvents";
+import Ionicons from "@expo/vector-icons/Ionicons";
 
 const Home = () => {
   const styles = tabsStyles();
@@ -12,14 +14,25 @@ const Home = () => {
       <ScrollView>
         {/* HEADER */}
         <View style={styles.profileSection}>
-          <Image style={styles.profileImage} />
-          <View style={{ marginLeft: 10 }}>
-            <Text style={styles.greetingText}>Hello!</Text>
-            <Text style={styles.nameText}>Anna K</Text>
+          <View style={{ flexDirection: "row", alignItems: "center" }}>
+            <Image style={styles.profileImage} />
+            <View style={{ marginLeft: 10 }}>
+              <Text style={styles.greetingText}>Hello!</Text>
+              <Text style={styles.nameText}>Anna K</Text>
+            </View>
           </View>
+          {/* SETTINGS */}
+          <TouchableOpacity>
+            <Ionicons name="settings" size={25} />
+          </TouchableOpacity>
         </View>
 
-        <Activity/>
+        <Activity />
+      
+        <Text style={styles.header}>Upcoming Events</Text>
+        <UpcomingEvents />
+        <UpcomingEvents />
+
 
       </ScrollView>
     </SafeAreaView>

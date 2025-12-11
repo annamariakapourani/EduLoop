@@ -15,7 +15,9 @@ export const tabsStyles = () => {
     profileSection: {
       flexDirection: "row",
       alignItems: 'center',
-      marginBottom: -20
+      marginBottom: -20,
+
+      justifyContent: "space-between"
     },
     profileImage: {
       width: 45, 
@@ -38,7 +40,7 @@ export const tabsStyles = () => {
       justifyContent: 'center',
       flex: 1,
     },
-    activityHeader: {
+    header: {
       marginBottom: 20,
       fontSize: 20,
       fontFamily: 'M-Bold'
@@ -79,7 +81,65 @@ export const tabsStyles = () => {
       width: "45%",
       borderRadius: 12,
       padding: 20,
+    },
+
+    // Folders
+    folders: {
+      backgroundColor: "#d4c2efff",
+      width: "100%",
+      borderRadius: 12,
+      height: "auto",
+      overflow: "hidden",
+      marginBottom: 20
+    },
+    cardBg: {
+      padding: 20,
+      flex: 1,
+      justifyContent: 'center'
+    },
+    cardImage: {
+      opacity: 0.25
+    },
+    folderImage: {
+      width: 45, 
+      height: 45,
+      borderRadius: 40,
+      backgroundColor: "#000",
+    },
+    folderName: {
+      marginLeft: 20,
+      fontFamily: 'M-Bold',
+      fontSize: 25
+    },
+
+    // Events
+    eventRow: {
+      flexDirection: "row",
+      alignItems: "flex-start",
+      marginBottom: 10
+    },
+    eventTime: {
+      padding: 8,
+      alignItems: "flex-end",
+      marginTop: -4
+    },
+    eventCard:{
+        flex: 1,
+        flexDirection: "row",
+        backgroundColor: "#fff",
+        paddingVertical: 10,
+        paddingHorizontal: 12,
+        borderRadius: 12,
+        height: 50,
+    },
+    colorBar: {
+      width: 4,
+      borderRadius: 999,
+      marginRight: 10
+    },
+    eventContent: {
+      flex: 1,
+      justifyContent: 'center'
     }
-    
   });
 };
