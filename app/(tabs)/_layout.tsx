@@ -1,16 +1,25 @@
-import { View } from "react-native";
 import React from "react";
 import { Tabs } from "expo-router";
 import Ionicons from "@expo/vector-icons/Ionicons";
+import TabBar from "@/components/TabBar";
 
 const Layout = () => {
   return (
-    <Tabs screenOptions={{ headerShown: false,tabBarShowLabel: false }}>
+    <Tabs
+      tabBar={(props) => <TabBar {...props} />}
+      screenOptions={{ headerShown: false, tabBarShowLabel: false }}
+    >
       <Tabs.Screen
         name="home"
-        options={{
-          tabBarIcon: () => <Ionicons name="home" size={20} color={"#000"} />,
-        }}
+      />
+      <Tabs.Screen
+        name="tasks"
+      />
+      <Tabs.Screen
+        name="timer"
+      />
+      <Tabs.Screen
+        name="studentforum"
       />
     </Tabs>
   );
