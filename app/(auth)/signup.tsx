@@ -98,8 +98,7 @@ const Signup = () => {
           <Text style={{ color: "#7F3F92", fontWeight: "500" }}>Sign In</Text>
         </TouchableOpacity>
       </View>
-
-
+      
     </SafeAreaView>
   );
 };
