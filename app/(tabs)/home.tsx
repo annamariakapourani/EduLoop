@@ -22,9 +22,12 @@ const Home = () => {
             </View>
           </View>
           {/* SETTINGS */}
+          
+          <View style={styles.iconContainer}>
           <TouchableOpacity>
             <Ionicons name="settings" size={25} />
           </TouchableOpacity>
+        </View>
         </View>
 
         <Activity />
