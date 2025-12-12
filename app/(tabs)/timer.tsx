@@ -1,4 +1,4 @@
-import { View, Text, Image, TouchableOpacity, Modal, Pressable } from "react-native";
+import { View, Text, Image, TouchableOpacity, Modal, Pressable, ImageBackground } from "react-native";
 import React, { useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { tabsStyles } from "@/styles/tabs.style.timer";
@@ -60,6 +60,12 @@ const timer = () => {
         {/* click inside does not close */}
           <Pressable style={styles.modalCard} onPress={() => setSettingsOpen(true)}>
             {/* modal title */}
+            <ImageBackground
+          source={require("@/assets/images/pattern.jpg")}
+          style={styles.cardBg}
+          imageStyle={styles.cardImage}
+        >
+
             <View style={{alignItems: 'center'}}>
               <Text style={{fontSize: 30, fontFamily: "M-Bold"}}>Timer Settings</Text>
             </View>
@@ -94,9 +100,11 @@ const timer = () => {
               </TouchableOpacity>
             </View>
 
-
+</ImageBackground>
           </Pressable>
         </Pressable>
+
+        
       </Modal>
 
     </SafeAreaView>

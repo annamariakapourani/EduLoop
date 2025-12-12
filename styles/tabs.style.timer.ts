@@ -70,6 +70,7 @@ export const tabsStyles = () => {
       borderRadius: 18,
       backgroundColor: "rgba(243,243,243)",
       padding: 16,
+      overflow: "hidden"
     },
     optionField: {
       flexDirection: "row",
@@ -112,6 +113,13 @@ export const tabsStyles = () => {
     },
     buttonSelected: {
       backgroundColor: "#bce8b4ff"
-    }
+    },
+    cardBg: {
+      width: "100%"
+    },
+    cardImage: {
+      opacity: 0.25,
+      borderRadius: 18,
+    },
   });
 };
