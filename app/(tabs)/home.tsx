@@ -22,21 +22,18 @@ const Home = () => {
             </View>
           </View>
           {/* SETTINGS */}
-          
           <View style={styles.iconContainer}>
-          <TouchableOpacity>
-            <Ionicons name="settings" size={25} />
-          </TouchableOpacity>
-        </View>
+            <TouchableOpacity>
+              <Ionicons name="settings-outline" size={25} />
+            </TouchableOpacity>
+          </View>
         </View>
 
         <Activity />
-      
+
         <Text style={styles.header}>Upcoming Events</Text>
         <UpcomingEvents />
         <UpcomingEvents />
-
-
       </ScrollView>
     </SafeAreaView>
   );

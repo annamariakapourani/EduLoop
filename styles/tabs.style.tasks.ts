@@ -6,7 +6,8 @@ export const tabsStyles = () => {
       flex: 1,
       justifyContent: "flex-start",
       padding: 20,
-      backgroundColor: "rgba(243,243,243)",
+      backgroundColor: "rgba(235,235,235)",
+    //   backgroundColor: "rgba(243,243,243)",
     },
     section: {
       justifyContent: "center",
