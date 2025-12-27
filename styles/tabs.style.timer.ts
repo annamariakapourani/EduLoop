@@ -100,10 +100,10 @@ export const tabsStyles = () => {
       marginTop: 40,
     },
     saveButton: {
-      backgroundColor: "#def9e1ff",
-      borderRadius: 30,
+      backgroundColor: "#d1f6d6ff",
+      borderRadius: 10,
       width: "40%",
-      height: 30,
+      height: 32,
       alignItems: "center",
       justifyContent: "center",
     },
